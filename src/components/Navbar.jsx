@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
@@ -27,16 +29,16 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 bg-[#fcba03] shadow"
               >
                 <li>
-                  <a>Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
                   <a>Sports Academy</a>
                   <ul className="p-2">
                     <li>
-                      <a>Picture Gallery</a>
+                      <Link to="/photogallery">Picture Gallery</Link>
                     </li>
                     <li>
                       <a>Live TV</a>
@@ -44,42 +46,44 @@ const Navbar = () => {
                   </ul>
                 </li>
                 <li>
-                  <a>Handicrafts</a>
+                  <Link to="/handicraft">Handicrafts</Link>
+                </li>
+                <li>
+                  <Link to="/sollutionlab">Sollution Lab</Link>
                 </li>
               </ul>
             </div>
 
             {/* LOGO + TEXT */}
             <div className="flex items-center">
-  <a className="px-3 py-2 bg-[#fcba03] rounded-md hover:bg-[#cfb56c] text-xl font-bold flex items-center">
-    <img
-      src="/src/assets/logo.jpg"
-      alt="Shopno Kurai Logo"
-      className="h-10 w-auto mr-2"
-    />
-    <div>
-      <h1>Swapno Kurai</h1>
-      {/* Hide this text on small screens, show on md+ screens */}
-      <small className="hidden md:block font-normal text-sm">
-        Social Development Agency since 2018
-      </small>
-    </div>
-  </a>
-</div>
-
+              <a className="px-3 py-2 bg-[#fcba03] rounded-md hover:bg-[#cfb56c] text-xl font-bold flex items-center">
+                <img
+                  src="/src/assets/logo.jpg"
+                  alt="Shopno Kurai Logo"
+                  className="h-10 w-auto mr-2"
+                />
+                <div>
+                  <h1>Swapno Kurai</h1>
+                  {/* Hide this text on small screens, show on md+ screens */}
+                  <small className="hidden md:block font-normal text-sm">
+                    Social Development Agency since 2018
+                  </small>
+                </div>
+              </a>
+            </div>
           </div>
 
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+          <div className="navbar-center hidden lg:flex ">
+            <ul className="menu menu-horizontal px-1 ">
               <li>
-                <a>Home</a>
+                <Link to="/">Home</Link>
               </li>
-              <li>
+              <li >
                 <details>
                   <summary>Sports Academy</summary>
-                  <ul className="p-2">
+                  <ul className="p-2 bg-[#fcba03] border-1">
                     <li>
-                      <a>Picture Gallery</a>
+                      <Link to="/photogallery">Picture Gallery</Link>
                     </li>
                     <li>
                       <a>Live TV</a>
@@ -88,7 +92,10 @@ const Navbar = () => {
                 </details>
               </li>
               <li>
-                <a>Handicrafts</a>
+                <Link to="/handicraft">Handicrafts</Link>
+              </li>
+              <li>
+                <Link to="/sollutionlab">Sollution Lab</Link>
               </li>
             </ul>
           </div>
