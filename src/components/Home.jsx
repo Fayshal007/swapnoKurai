@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const Home = () => {
@@ -5,6 +6,7 @@ const Home = () => {
         <>
         <Navbar/>
             <h1>This is home</h1>
+        <Footer/>
         </>
     );
 };

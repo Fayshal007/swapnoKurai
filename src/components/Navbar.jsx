@@ -51,16 +51,22 @@ const Navbar = () => {
 
             {/* LOGO + TEXT */}
             <div className="flex items-center">
-              
-              <a className="px-3 py-2 bg-[#fcba03] rounded-md hover:bg-[#cfb56c] text-xl font-bold flex items-center">
-              <img
-                src="/src/assets/logo.jpg"
-                alt="Shopno Kurai Logo"
-                className="h-10 w-auto mr-2"
-              />
-                  Swapno Kurai
-              </a>
-            </div>
+  <a className="px-3 py-2 bg-[#fcba03] rounded-md hover:bg-[#cfb56c] text-xl font-bold flex items-center">
+    <img
+      src="/src/assets/logo.jpg"
+      alt="Shopno Kurai Logo"
+      className="h-10 w-auto mr-2"
+    />
+    <div>
+      <h1>Swapno Kurai</h1>
+      {/* Hide this text on small screens, show on md+ screens */}
+      <small className="hidden md:block font-normal text-sm">
+        Social Development Agency since 2018
+      </small>
+    </div>
+  </a>
+</div>
+
           </div>
 
           <div className="navbar-center hidden lg:flex">
