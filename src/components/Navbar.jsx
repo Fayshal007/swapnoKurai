@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "./../assets/logo.jpg"
+import logo from "./../assets/logo.jpg";
 
 const Navbar = () => {
   return (
@@ -36,6 +36,17 @@ const Navbar = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
+                  <a>Projects</a>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/currentprojects">Current Projects</Link>
+                    </li>
+                    <li>
+                      <Link to="/completedprojects">Completed Projects</Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
                   <a>Sports Academy</a>
                   <ul className="p-2">
                     <li>
@@ -47,10 +58,18 @@ const Navbar = () => {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/handicraft">Handicrafts</Link>
+                  <a>Sollution Lab</a>
+                  <ul className="p-2">
+                    <li>
+                      <Link to="/handicraft">Handicrafts</Link>
+                    </li>
+                    <li>
+                      <Link to="/manpower">Man Power</Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <Link to="/sollutionlab">Sollution Lab</Link>
+                  <Link to="/aboutus">About Us</Link>
                 </li>
               </ul>
             </div>
@@ -79,7 +98,20 @@ const Navbar = () => {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li >
+              <li>
+                <details>
+                  <summary>Projects</summary>
+                  <ul className="p-2 bg-[#fcba03] border-1">
+                    <li>
+                      <Link to="/currentprojects">Current Projects</Link>
+                    </li>
+                    <li>
+                      <Link to="/completedprojects">Completed Projects</Link>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
                 <details>
                   <summary>Sports Academy</summary>
                   <ul className="p-2 bg-[#fcba03] border-1">
@@ -93,10 +125,20 @@ const Navbar = () => {
                 </details>
               </li>
               <li>
-                <Link to="/handicraft">Handicrafts</Link>
+                <details>
+                  <summary>Sollution Lab</summary>
+                  <ul className="p-2 bg-[#fcba03] border-1">
+                    <li>
+                    <Link to="/handicraft">Handicrafts</Link>
+                    </li>
+                    <li>
+                    <Link to="/manpower">Man Power</Link>
+                    </li>
+                  </ul>
+                </details>
               </li>
               <li>
-                <Link to="/sollutionlab">Sollution Lab</Link>
+                <Link to="/aboutus">About Us</Link>
               </li>
             </ul>
           </div>
