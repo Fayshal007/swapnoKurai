@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import MissionAndVision from "./pages/MissionAndVision";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <p className="md:text-3xl">A Social Development Organization</p>
       </div>
       <Banner />
+      <MissionAndVision/>
     </>
   );
 };
