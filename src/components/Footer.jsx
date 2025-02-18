@@ -1,10 +1,11 @@
+import logo from "./../assets/logo.jpg"
 const Footer = () => {
   return (
     <>
       <footer className="footer footer-horizontal footer-center bg-[#fcba03]  p-10">
         <aside>
         <img
-                src="/src/assets/logo.jpg"
+                src={logo}
                 alt="Shopno Kurai Logo"
                 className=" h-20 w-auto mr-2"
               />

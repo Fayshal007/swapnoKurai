@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "./../assets/logo.jpg"
 
 const Navbar = () => {
   return (
@@ -58,7 +59,7 @@ const Navbar = () => {
             <div className="flex items-center">
               <a className="px-3 py-2 bg-[#fcba03] rounded-md hover:bg-[#cfb56c] text-xl font-bold flex items-center">
                 <img
-                  src="/src/assets/logo.jpg"
+                  src={logo}
                   alt="Shopno Kurai Logo"
                   className="h-10 w-auto mr-2"
                 />
