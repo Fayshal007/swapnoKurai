@@ -86,7 +86,7 @@ const Navbar = () => {
                   <h1>Swapno Kurai</h1>
                   {/* Hide this text on small screens, show on md+ screens */}
                   <small className="hidden md:block font-normal text-sm">
-                    Social Development Agency since 2018
+                    Social Development Organization since 2023
                   </small>
                 </div>
               </a>

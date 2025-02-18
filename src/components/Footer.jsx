@@ -12,7 +12,7 @@ const Footer = () => {
           <p className="font-bold">
           Swapno Kurai
             <br />
-            Social Development Agency since 2018
+            Social Development Organization since 2023
           </p>
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </aside>

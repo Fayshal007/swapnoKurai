@@ -1,7 +1,9 @@
 const MissionAndVision = () => {
   return (
     <>
-      <h1 className="text-center font-bold text-3xl md:text-5xl mt-4 mb-3">Our Mission and Vision</h1>
+      <h1 className="text-center font-bold text-3xl md:text-5xl mt-4 mb-3">
+        Our Mission and Vision
+      </h1>
       <div className=" md:w-4xl mx-auto mb-6">
         <div className="collapse collapse-arrow bg-base-100 border border-base-300">
           <input type="radio" name="my-accordion-2" defaultChecked />

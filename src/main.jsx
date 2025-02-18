@@ -10,6 +10,7 @@ import Home from "./components/Home"
 import CurrentProjects from "./components/pages/projectsPages/CurrentProjects";
 import CompletedProjects from "./components/pages/projectsPages/CompletedProjects";
 import ManPower from "./components/pages/sollutionLabPages/ManPower";
+import AboutUs from "./components/pages/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/manpower",
         element: <ManPower/>,
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUs/>,
       },
     ],
   },
